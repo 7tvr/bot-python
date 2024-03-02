@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#111111">
+    <meta property="keywords" content="dove, discord bot, discord, dovebot, dove vercel, dovebot.vercel.app, heal rip, greedbot, bleed bot, dove bot source, how to use dove bot">
+    <title>dove - commands</title>
+    <link rel="icon" href="heal.png">
+    <link rel="stylesheet" href="commands.css">
+    <script>
+        document.onkeydown = e => (e.keyCode === 123 || (e.ctrlKey && e.shiftKey && (e.keyCode === 73 || e.keyCode === 74)) || (e.ctrlKey && e.keyCode === 85)) ? (alert("403 forbidden."), false) : undefined
+    </script>
+</head>
+<body>
+    <div id="search-container">
+        <input type="text" id="search-input" placeholder="Search" oninput="Search()">
+        <ul>
+            <li onclick="navigation('Social Media')">Social Media</li>
+            <li onclick="navigation('Moderation')">Moderation</li>
+            <li onclick="navigation('Information')">Information</li>
+            <li onclick="navigation('Economy')">Economy</li>
+            <li onclick="navigation('LastFM')">LastFM</li>
+            <li onclick="navigation('Miscellaneous')">Miscellaneous</li>
+            <li onclick="navigation('Configuration')">Configuration</li>
+        </ul>
+    </div>
+    <div id="content">
+        <pre id="search-results" style="color: #fff;">Default prefix = . | [] = optional argument, () = required argument
+ 
+# Social Media:
+- .tiktok link: Provides a link to a TikTok account or video.
+- .tiktok user: Retrieves information or content from a specific TikTok user.
+- .fyp: Displays content related to the "For You Page" on TikTok.
+- .instagram: Likely a command to interact with Instagram or retrieve information from Instagram.
+- .spotifytrack: Related to Spotify, likely retrieves information about a specific track.
+- .spotifyalbum: Related to Spotify, likely retrieves information about a specific album.
+- .YouTube: Likely a command to interact with YouTube or retrieve information from YouTube.
+- .roblox: Likely a command related to Roblox.
+
+
+# Miscellaneous
+- .vanity: Shows if an discord vanity is taken/untaken.
+- .steal: Steals an emoji.
+- .quickpoll: Does an quickpoll.
+- .enable juul: Enables vape cmd.
+- .disable juul: Disables vape cmd.
+- .nuke: Nukes an channel and reclones the channel.
+- .prefix set: Sets the bot local prefix.
+- .prefix set reset: Resets the bot local prefix.            
+- .antilink on: Filter server invites.
+- .antilink off: Unfilters server invites.           
+- .antibot on: Filters from bots coming inside server.
+- .antibot off: Unfilters the bots
+            
+
+            
+            
+# Moderation:
+- .purge: Deletes a certain number of messages from a channel.
+- .lock: Locks a channel, preventing users from sending messages.
+- .unlock: Unlocks a previously locked channel.
+- .ban: Bans a user from the server.
+- .unban: Unbans a user from the server.
+- .roledelete: Deletes a specific role from the server.
+- .warn: Warns a user.
+- .pin: Pins a message in a channel.
+- .unpin: Unpins a previously pinned message.
+
+# Information & Utility:
+- .invite: Generates an invite link for the bot.
+- .image: Likely a command to retrieve or manipulate images.
+- .help: Displays help information or usage instructions.
+- .perms: Displays the permissions of a user or role.
+- .ping: Checks the bot's latency.
+- .addmultiple: Adds multiple users to a role simultaneously.
+- .urban: Retrieves definitions or explanations from the Urban Dictionary.
+- .buy juul: Likely a command related to purchasing a Juul product or service.
+- .vape: Potentially a command related to vaping or vaporizers.
+- .movie: Provides information or recommendations about movies.
+- .weather: Retrieves weather information.
+- .bible: Retrieves Bible verses or information.
+- .agify: Retrieves the age prediction for a given name.
+- .wyr: Presents "Would You Rather" scenarios for users to choose from.
+- .members: Lists the members of a server or channel.
+- .quickpoll: Sets up a quick poll for users to vote on.
+- .screenshot: Takes a screenshot of a specified webpage or content.
+- .ss: Alias for .screenshot.
+- .trace: Traces the route to a specified destination.
+- .define: Defines or explains a specified word or term.
+- .uptime: Displays how long the bot has been online.
+- .botinfo: Retrieves information about the bot.
+- .serveravatar: Displays the avatar of the server.
+- .inviteinfo: Provides information about an invite link.
+- .dog: Retrieves a picture or information about dogs.
+- .userinfo: Retrieves information about a specific user.
+- .ui: Likely related to user interface customization.
+- .among: Likely related to the game "Among Us."
+- .roles: Lists the roles available on the server.
+- .bi: Retrieves information about "dove" bot.
+- .calculate: Performs calculations or mathematical operations.
+- .8ball: Simulates a magic 8-ball fortune-telling experience.
+- .snipe: Retrieves the last deleted message from a channel.
+- .cat: Retrieves pictures or information about cats.
+- .fox: Retrieves pictures or information about foxes.
+- .quote: Retrieves a qoute from Kanye West.
+- .purge match: Deletes the message containing the given substring.
+- .clear match: Alias for purge match.
+- .c match: Alias for purge match.
+
+            
+
+# LastFM
+- .nowplaying: Shows what ur playing. 
+- .lf plays: Shows how many plays you have for an song.            
+- .lf set: Sets your LF account.           
+- .lf unlink: Unlinks ur LF account.
+
+
+            
+# Economy
+- .daily: Provides a daily reward or bonus to users.
+- .balance / .bal: Checks the balance of a user's currency or points.
+- .transfer: Transfers currency or points between users.
+- .deposit / .withdraw / .dep: Handles currency deposits or withdrawals.
+- .coinflip: Simulates a coin flip game.
+- .gamble: Allows users to gamble currency.
+- .rob: Initiates a robbery attempt against another user.
+- .disable rob: Disables a certain functionality related to a user named "rob".
+- .enable rob: Enables a previously disabled functionality related to a user named "rob".
+- .devdaily: Provides a developer-related daily reward or bonus.
+- .leaderboard: Displays a leaderboard of users based on certain criteria.
+- .work: Simulates a work activity for users.
+
+
+
+           
+            
+# Configuration
+- .prefix set: Allows users to set a custom prefix for commands.
+- .prefix set reset: Resets the custom prefix to default.
+- .sudo: Executes a command as if it were sent by another user.
+- .goal: Sets or tracks progress towards a specified goal.
+- .createembed: Likely related to customizing or formatting embedded messages.</pre></div><script src="commands.js"></script></body></html>
